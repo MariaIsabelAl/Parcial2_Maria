@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Parcial2_Maria.Registro;
 
 namespace Parcial2_Maria
 {
@@ -24,5 +25,7 @@ namespace Parcial2_Maria
         {
             InitializeComponent();
         }
+
+      
     }
 }

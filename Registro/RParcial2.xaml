@@ -5,16 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Parcial2_Maria.Registro"
         mc:Ignorable="d"
-        Title="RParcial2" Height="450" Width="450">
-    <Grid>
+        Title="RParcial2" Height="500" Width="370">
+    <Grid x:Name="RParcialGrid"  Height="500" Width="370">
+        
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition />
+            <ColumnDefinition Width="Auto"  />
+            <ColumnDefinition Width="Auto"  />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -24,7 +21,52 @@
             <RowDefinition Height="Auto"  />
             <RowDefinition Height="Auto"  />
             <RowDefinition Height="Auto"  />
+            <RowDefinition Height="Auto"  />
             <RowDefinition />
         </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal"  >
+            <TextBlock Name="IdLabel" Text="Id" Margin="30,5,5,5" Width="35" />
+            <TextBox Name="IdTextBox" Margin="12,1,0,0" Grid.Column="1"  Foreground="Blue" Grid.ColumnSpan="2" Width="142"/>
+            <Button x:Name="BuscarButton" Content="Buscar" HorizontalAlignment="Left" HorizontalContentAlignment="Right"  Width="63" Grid.Column="2" Height="25"  FontWeight="Bold">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/icons8-buscar-trabajo-correspondiente-64.png" Stretch="Uniform" AlignmentX="Left"/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+
+        
+
+      
+        
+
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <Button x:Name="AgregarButton"  Content="Agregar" HorizontalContentAlignment="Right" Height="22"  Width="69"   FontWeight="Bold">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/icons8-mas-64.png" AlignmentX="Left" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+        
+       
+
+        <StackPanel Orientation="Horizontal" Grid.Row="7" >
+            <Button x:Name="NuevoButton" Content="Nuevo" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="30,1,0,2" Grid.Row="7"  Height="26" Width="72"   FontWeight="Bold"  >
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/icons8-crear-nuevo-64.png" Stretch="Uniform" AlignmentX="Left"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="GuardarButton" Content="Guardar" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="10,1,0,2"  Height="26" Width="76" Grid.Column="1"  FontWeight="Bold" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/icons8-guardar-64.png" Stretch="Uniform" AlignmentX="Left"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Eliminar" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="10,1,0,2"  Height="27" Width="70" Grid.Column="1"   FontWeight="Bold">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Resources/icons8-eliminar-64.png" Stretch="Uniform" AlignmentX="Left"/>
+                </Button.Background>
+            </Button>
+
+        </StackPanel>
     </Grid>
 </Window>

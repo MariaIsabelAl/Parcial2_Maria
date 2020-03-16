@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
-using Parcial2_Maria.Entidades;
+
 
 namespace Parcial2_Maria.DAL
 {

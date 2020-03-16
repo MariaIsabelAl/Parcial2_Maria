@@ -21,5 +21,7 @@ namespace Parcial2_Maria.Registro
         {
             InitializeComponent();
         }
+
+       
     }
 }
