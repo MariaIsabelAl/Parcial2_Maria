@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Parcial2_Maria"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Llamadas" Height="100" Width="255">
     <Grid>
-      
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="LlamadasButton" Content="Llamadas"  Width="104" Height="34" Click="LlamadasButton_Click">
+                
+            </Button>
+            
+        </StackPanel>
     </Grid>
 </Window>

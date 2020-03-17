@@ -14,11 +14,10 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Parcial2_Maria.Registro;
 
+
 namespace Parcial2_Maria
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+ 
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -26,6 +25,10 @@ namespace Parcial2_Maria
             InitializeComponent();
         }
 
-      
+        private void LlamadasButton_Click(object sender, RoutedEventArgs e)
+        {
+            RParcial2 rParcial = new RParcial2();
+            rParcial.Show();
+        }
     }
 }
